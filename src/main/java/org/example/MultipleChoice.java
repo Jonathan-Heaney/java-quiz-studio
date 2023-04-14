@@ -13,7 +13,8 @@ public class MultipleChoice extends Question {
         if (userAnswer == correctAnswer) {
             System.out.println("Correct!");
         } else {
-            System.out.println("Incorrect! The correct answer was " + this.correctAnswer);
+            System.out.println("Incorrect! The correct answer was " +
+                    this.getAnswerChoices().get(correctAnswer - 1));
         }
     }
     public Integer getCorrectAnswer() {
